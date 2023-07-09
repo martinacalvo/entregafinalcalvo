@@ -38,9 +38,6 @@ a {
   text-decoration: none;
   color: brown;
 }
-a:hover {
-  color: orangered;
-}
 
 .titulo {
   margin: 0;
