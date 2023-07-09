@@ -1,0 +1,16 @@
+footer{
+    margin: map-get($header-ppl, mrg);
+    padding: map-get($header-ppl, pd);
+    @extend %row;
+    text-align: map-get($header-ppl, text)
+
+}
+
+footer{
+    nav{
+        ul{
+            display: flex;
+    justify-content: space-evenly
+        }
+    }
+}

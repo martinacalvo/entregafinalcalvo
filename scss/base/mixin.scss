@@ -1,0 +1,9 @@
+@mixin titulo1($fw, $clr, $ta){
+    font-weight: $fw;
+    color: $clr;
+    text-align: $ta;
+}
+
+.titulo{
+    @include titulo1(bold, rgb(79, 52, 15),center)
+}

@@ -1,0 +1,146 @@
+header nav ul, footer {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  font-weight: bold;
+  color: rgb(79, 52, 15);
+  text-align: center;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header div nav {
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  background-image: url("../images/luzu-personassinyoyi.webp");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+a:hover {
+  color: orangered;
+}
+
+.titulo {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/luzu-personassinyoyi.webp");
+  font-family: "Cuprum", sans-serif;
+}
+
+p {
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+section h2 {
+  color: rgb(204, 66, 35);
+  text-align: center;
+}
+
+.texto {
+  text-align: center;
+  line-height: normal;
+  font-size: small;
+  font-weight: bold;
+}
+
+section h4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.logoapp {
+  width: 20%;
+  height: 20%;
+}
+
+main {
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+main div {
+  margin: 10px;
+  padding: 10px;
+}
+
+main div div {
+  text-align: center;
+}
+
+.titulo_index {
+  color: rgb(215, 121, 39);
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo {
+  background-color: rgb(223, 176, 126);
+}
+
+.titulogrilla {
+  grid-area: titulogrilla;
+  width: 100%;
+}
+
+.spotify {
+  grid-area: spotify;
+}
+
+.youtube {
+  grid-area: youtube;
+}
+
+.twitch {
+  grid-area: twitch;
+}
+
+.imagen {
+  grid-area: imagen;
+}
+
+.parrafo {
+  background-color: brown;
+  grid-area: parrafo;
+  width: 300px;
+  line-height: 1;
+}
+
+#grilla_index {
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 100px 150px 500px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-areas: "titulogrilla titulogrilla titulogrilla" "youtube spotify twitch" "parrafo imagen imagen";
+  align-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,143 @@
+@import './base/colores';
+@import './base/listas';
+@import './base/maps';
+@import './base/operaciones';
+@import './base/vars';
+@import './base/extend';
+@import './base/mixin.scss';
+@import './componentes/footer';
+@import './componentes/header';
+
+
+
+
+* {
+    margin: map-get($header-ppl, mrg);
+    padding: map-get($header-ppl, pd);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: nth($clrs, 1);
+    &:hover{
+        color: orangered;
+    }
+
+}
+.titulo{
+    margin: map-get($header-ppl, mrg);
+    padding: map-get($header-ppl, pd);
+    background-image: url('../images/luzu-personassinyoyi.webp');
+    font-family: 'Cuprum', sans-serif;
+}
+p{
+    text-align: $text;
+    color: nth($clrs, 1);
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+}
+section{
+    h2{
+        color: nth($clrs, 3);
+        text-align: $text;
+    }
+}
+.texto{
+    text-align: $text;
+    line-height: normal;
+    font-size: small;
+    font-weight: bold;
+}
+
+section{
+    h4{
+        text-align: $text;
+        font-weight: bold;
+    }
+}
+
+header{
+    nav{
+        ul{
+            @extend %row;
+        }
+    }
+}
+
+.logoapp{
+    width: nth($size, 6);
+    height: nth($size, 6);
+}
+
+main{
+    margin: nth($size, 1);
+    padding: nth($size, 1);
+    justify-content: space-around;
+}
+main{
+    div{
+        margin: nth($size, 1);
+        padding: nth($size, 1);
+    }
+
+}
+main{
+    div{
+        div{
+            text-align: $text;
+        }
+    }
+}
+
+
+.titulo_index{
+    color: nth($clrs, 4);
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin: map-get($header-ppl, mrg);
+    padding: map-get($header-ppl, pd);
+}
+
+.fondo{
+    background-color: nth($clrs, 5);
+}
+
+.titulogrilla{
+    grid-area: titulogrilla;
+    width: 100%;
+}
+
+.spotify{
+    grid-area: spotify;
+}
+.youtube{
+    grid-area: youtube;
+}
+.twitch{
+    grid-area: twitch;
+    
+}
+.imagen{
+    grid-area: imagen;
+}
+.parrafo{
+    background-color: brown;
+    grid-area: parrafo;
+    width: 300px;
+    line-height: 1;
+}
+
+#grilla_index{
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 100px 150px 500px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas:
+    "titulogrilla titulogrilla titulogrilla"
+    "youtube spotify twitch"
+    "parrafo imagen imagen";
+    align-content: center;
+}
