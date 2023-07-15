@@ -16,6 +16,7 @@
     padding: map-get($header-ppl, pd);
     text-decoration: none;
     list-style-type: none;
+    background-color: nth($clrs, 5);
 }
 
 a{
