@@ -11,18 +11,16 @@
 
 
 
-* {
+*{
     margin: map-get($header-ppl, mrg);
     padding: map-get($header-ppl, pd);
     text-decoration: none;
     list-style-type: none;
-    background-color: nth($clrs, 5);
 }
 
 a{
     text-decoration: none;
     color: nth($clrs, 1);
-    
 
 }
 .titulo{
@@ -30,6 +28,7 @@ a{
     padding: map-get($header-ppl, pd);
     background-image: url('../images/luzu-personassinyoyi.webp');
     font-family: 'Cuprum', sans-serif;
+
 }
 p{
     text-align: $text;
@@ -139,4 +138,23 @@ main{
     "youtube spotify twitch"
     "parrafo imagen imagen";
     align-content: center;
+}
+
+.aparecer img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+.aparecer img {
+    animation: aparecer 0.5s ease-in-out;
+    animation-fill-mode: forwards;
 }
