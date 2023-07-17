@@ -39,6 +39,11 @@ a {
   color: brown;
 }
 
+.link {
+  text-decoration: none;
+  color: brown;
+}
+
 .titulo {
   margin: 0;
   padding: 0;
@@ -76,8 +81,10 @@ section h4 {
 }
 
 main {
-  margin: 10px;
-  padding: 10px;
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0px;
   justify-content: space-around;
 }
 
@@ -88,6 +95,11 @@ main div {
 
 main div div {
   text-align: center;
+}
+
+.texto {
+  text-align: center;
+  font-size: large;
 }
 
 .titulo_index {
@@ -117,6 +129,7 @@ main div div {
 
 .twitch {
   grid-area: twitch;
+  background-color: none;
 }
 
 .imagen {
@@ -142,7 +155,7 @@ main div div {
 
 .aparecer img {
   opacity: 0;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 @keyframes aparecer {
@@ -156,6 +169,52 @@ main div div {
 .aparecer img {
   animation: aparecer 0.5s ease-in-out;
   animation-fill-mode: forwards;
+}
+
+.persona {
+  border: 0;
+}
+
+.aparerdos {
+  border-radius: 80%;
+}
+
+.persona:hover {
+  transform: translateX(300px);
+  transform: translateY(70px);
+  transform: scale(1.5);
+  transition: all 1.8s;
+}
+
+.programa {
+  border: 0;
+}
+
+.programa:hover {
+  transform: translateX(300px);
+  transform: translateY(70px);
+  transform: scale(1.2);
+  transition: all 1.8s;
+}
+
+.programados {
+  background-color: rgb(223, 176, 126);
+}
+
+.programados:hover {
+  transform: scale(1.2);
+  transition: all 1.5s;
+}
+
+#texto {
+  font-size: 20px;
+  transition: font-size 0.5s ease;
+}
+
+#texto:hover {
+  font-size: 50px;
+  transform: translateX(700px);
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

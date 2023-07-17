@@ -21,7 +21,10 @@
 a{
     text-decoration: none;
     color: nth($clrs, 1);
-
+}
+.link{
+    text-decoration: none;
+    color: nth($clrs, 1);
 }
 .titulo{
     margin: map-get($header-ppl, mrg);
@@ -70,8 +73,10 @@ header{
 }
 
 main{
-    margin: nth($size, 1);
-    padding: nth($size, 1);
+    margin:0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: nth($size, 5);
     justify-content: space-around;
 }
 main{
@@ -89,6 +94,10 @@ main{
     }
 }
 
+.texto{
+    text-align: center;
+    font-size: large;
+}
 
 .titulo_index{
     color: nth($clrs, 4);
@@ -115,7 +124,7 @@ main{
 }
 .twitch{
     grid-area: twitch;
-    
+    background-color: none;
 }
 .imagen{
     grid-area: imagen;
@@ -154,7 +163,50 @@ main{
     }
 }
   
-.aparecer img {
+.aparecer img{
     animation: aparecer 0.5s ease-in-out;
     animation-fill-mode: forwards;
 }
+
+.persona{
+    border: 0;
+}
+.aparerdos{
+    border-radius: 80%;
+}
+.persona:hover{
+    transform: translateX(300px);
+    transform: translateY(70px);
+    transform: scale(1.5);
+    transition: all 1.8s;
+}
+
+.programa{
+    border: 0;
+}
+
+.programa:hover{
+    transform: translateX(300px);
+    transform: translateY(70px);
+    transform: scale(1.2);
+    transition: all 1.8s;
+}
+
+.programados{
+    background-color: nth($clrs,5);
+}
+.programados:hover{
+    transform: scale(1.2);
+    transition: all 1.5s;
+}
+#texto{
+    font-size: 20px;
+    transition: font-size 0.5s ease;
+}
+  
+#texto:hover {
+    font-size: 50px;
+    transform: translateX(700px);
+    z-index: 1;
+}
+
