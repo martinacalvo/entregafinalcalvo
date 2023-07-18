@@ -137,20 +137,55 @@ main div div {
 }
 
 .parrafo {
-  background-color: brown;
+  position: relative;
+  background-color: rgb(195, 78, 27);
   grid-area: parrafo;
   width: 300px;
-  line-height: 1;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.7;
+  box-shadow: 1 2px 4px rgba(182, 81, 14, 0.2);
+  border: 2px;
+  font-style: italic;
 }
 
-#grilla_index {
-  margin: 10px;
+.imagenuno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  max-width: 100%;
+}
+
+.texto {
+  margin: 0;
   padding: 10px;
-  display: grid;
-  grid-template-rows: 100px 150px 500px;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-areas: "titulogrilla titulogrilla titulogrilla" "youtube spotify twitch" "parrafo imagen imagen";
-  align-content: center;
+  color: white;
+}
+
+.parrafo:hover {
+  background-color: rgba(195, 78, 27, 0.8);
+}
+
+.textodos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.parrafo:hover .textodos {
+  opacity: 1;
+}
+
+.parrafo:hover h3 {
+  opacity: 0;
 }
 
 .aparecer img {
@@ -190,11 +225,16 @@ main div div {
   border: 0;
 }
 
+.nicodos:hover {
+  transform: scale(1.5);
+  transition: all 1.8s;
+}
+
 .programa:hover {
   transform: translateX(300px);
   transform: translateY(70px);
   transform: scale(1.2);
-  transition: all 1.8s;
+  transition: all 2.8s;
 }
 
 .programados {
@@ -215,6 +255,11 @@ main div div {
   font-size: 50px;
   transform: translateX(700px);
   z-index: 1;
+}
+
+.spotify:hover, .youtube:hover, .twitch:hover {
+  transform: scale(1.5);
+  transition: all 1.8s;
 }
 
 /*# sourceMappingURL=style.css.map */
