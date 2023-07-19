@@ -11,6 +11,7 @@
 
 
 
+
 *{
     margin: map-get($header-ppl, mrg);
     padding: map-get($header-ppl, pd);
@@ -50,6 +51,7 @@ section{
     line-height: normal;
     font-size: small;
     font-weight: bold;
+    
 }
 
 section{
@@ -71,7 +73,9 @@ header{
     width: nth($size, 6);
     height: nth($size, 6);
 }
-
+.logoapp .lead {
+    white-space: nowrap;
+}
 main{
     margin:0;
     margin-left: 0;
@@ -131,8 +135,9 @@ main{
 }
 .parrafo{
     position: relative;
-    background-color: rgb(195, 78, 27);
+    background-color: rgb(223, 176, 126);
     grid-area: parrafo;
+    opacity: 0.9;
     width: 300px;
     height: 300px;
     display: flex;
@@ -143,6 +148,7 @@ main{
     box-shadow: 1 2px 4px rgba(182, 81, 14, 0.2);
     border: 2px;
     font-style: italic;
+    border-radius: 95%;
   }
 .imagenuno{
     display: flex;
@@ -159,14 +165,16 @@ main{
     padding: 10px;
     color: white;
 }
-.parrafo:hover{
-    background-color: rgba(195, 78, 27, 0.8);
-}
-
+.parrafo {
+    position: relative;
+  }
+  
   .textodos {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease;
   }
@@ -174,10 +182,13 @@ main{
   .parrafo:hover .textodos {
     opacity: 1;
   }
+.parrafo:hover .textodos{
+    opacity: 1;
+}
   
-  .parrafo:hover h3 {
+.parrafo:hover h3{
     opacity: 0;
-  }
+}
  
 
 
@@ -217,7 +228,7 @@ main{
     border: 0;
 }
 .nicodos:hover{
-    transform: scale(1.5);
+    transform: scale(2.5);
     transition: all 1.8s;
 }
 .programa:hover{
@@ -238,7 +249,16 @@ main{
     font-size: 20px;
     transition: font-size 0.5s ease;
 }
-  
+
+.titulodeindex{
+    z-index: 1;
+    font-size: 50px;
+    
+}
+
+.titulodeindex:hover{
+    transform: scale(1.6) translateX(100px);
+}
 #texto:hover {
     font-size: 50px;
     transform: translateX(700px);
